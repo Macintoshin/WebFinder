@@ -1,0 +1,98 @@
+body, html {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #222226;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.Searchbox {
+    color: white;
+    margin-top: 10vmin;
+    width: 76vmin; height: 6vmin;
+    background: #222226;
+    border-radius: 100vmin;
+    border: solid 0.2vmin #7d7d7d;
+    transition: all 300ms;
+}
+.Searchbox:has(> #searchbar:focus) {
+    border: solid 0.15vmin #00000027;
+    background-color: #3a3a3e;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.528);
+}
+.Searchbox:hover{
+    border: solid 0.15vmin #00000027;
+    background-color: #3a3a3e;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.528);
+}
+input {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    width: 70vmin; height: 6vmin;
+    border-radius: 100vmin;
+    transition: all 250ms;
+    font-size: 2.5vmin;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+#searchbar:focus::placeholder{
+    color: transparent;
+}
+#searchbutton {
+    margin-top: 5vmin;
+    outline: none;
+    background: #3a3a3e;
+    border: none;
+    width: 15vmin; height: 5vmin;
+    border-radius: 0.5vmin;
+    font-size: 2.1vmin;
+    margin-right: 2vmin;
+    color: rgb(255, 255, 255);
+}
+#sitebutton {
+    margin-top: 5vmin;
+    outline: none;
+    background: #3a3a3e;
+    border: none;
+    width: 15vmin; height: 5vmin;
+    border-radius: 0.5vmin;
+    font-size: 2.1vmin;
+    margin-right: 2vmin;
+    color: rgb(255, 255, 255);
+}
+#searchbutton:hover{
+    border: solid 0.2vmin #7d7d7d;
+    cursor: pointer;
+}
+#sitebutton:hover{
+    border: solid 0.2vmin #7d7d7d;
+    cursor: pointer;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7vmin;
+    background-color: #171718;
+    color: white;
+}
+a {
+    color: #7d7d7d;
+    text-decoration: none;
+  }
+#links {
+    margin-top: 2.3vmin;
+    margin-left: 2vmin;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: alias;
+}
+.Logo {
+    margin-top: 25vmin;
+    font-size: 56px;
+    font-weight: bolder;
+    color: white;
+}
