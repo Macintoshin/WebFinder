@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>MacinSearch</title>
+        <title>MacInSearch</title>
         <link rel="stylesheet" href="styles.css">
         <script src="javascript.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" href="assets/Happy_Mac.svg">
     </header>
     <body>
         <center>
             <div class="Logo">
-                Search
+                <img src="assets/Happy_Mac.svg">
+                <span class="material-symbols-outlined" id="placeiconlogo">place_item</span>           
+                <span class="material-symbols-outlined" id="searchiconlogo">search</span>         
             </div>
+            <div class="sitename">MacInSearch</div>
             <div class="Searchbox">
                 <input id="searchbar" autofocus="autofocus" type="text" onkeypress="handle(event)" class="textfield" placeholder="Type a search query or a URL">
+                <span class="material-symbols-outlined" id="searchicon">search</span>
+                <span class="material-symbols-outlined" id="globeicon">public</span>   
             </div>
-            <button onclick="googleSearch();" tabindex="0" id="searchbutton">Search</button>
-            <button tabindex="0" id="sitebutton" onclick="website()">github</button>
         </center>
+        <br>
+        <div class="buttons">
+            <button onclick="googleSearch();"  id="searchbutton">Search</button>
+            <button  id="sitebutton" onclick="website()">Github</button>
+        </div>
         <footer>
             <div id="links">
-                <a href="https://macintoshing.tk/">Made by Macintoshing</a>                
+                <a href="https://macintoshing.tk/" id="myicon">Made by Macintoshing<span  class="material-symbols-outlined" id="personicon">person</span></a>
+                <a href="https://github.com/material-components" id="siteicons">Site icons <span class="material-symbols-outlined" id="tokenicon">token</span></a>
             </div>
         </footer>
     </body>

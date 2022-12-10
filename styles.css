@@ -7,7 +7,7 @@ body, html {
 }
 .Searchbox {
     color: white;
-    margin-top: 10vmin;
+    margin-top: 7vmin;
     width: 76vmin; height: 6vmin;
     background: #222226;
     border-radius: 100vmin;
@@ -41,6 +41,7 @@ input {
     color: transparent;
 }
 #searchbutton {
+    align-self: center;
     margin-top: 5vmin;
     outline: none;
     background: #3a3a3e;
@@ -48,10 +49,10 @@ input {
     width: 15vmin; height: 5vmin;
     border-radius: 0.5vmin;
     font-size: 2.1vmin;
-    margin-right: 2vmin;
     color: rgb(255, 255, 255);
 }
 #sitebutton {
+    align-self: center;
     margin-top: 5vmin;
     outline: none;
     background: #3a3a3e;
@@ -59,7 +60,6 @@ input {
     width: 15vmin; height: 5vmin;
     border-radius: 0.5vmin;
     font-size: 2.1vmin;
-    margin-right: 2vmin;
     color: rgb(255, 255, 255);
 }
 #searchbutton:hover{
@@ -82,17 +82,77 @@ a {
     color: #7d7d7d;
     text-decoration: none;
   }
-#links {
-    margin-top: 2.3vmin;
-    margin-left: 2vmin;
-}
 a:hover {
     text-decoration: underline;
     cursor: alias;
 }
 .Logo {
+    background-color: #171718;;
+    width: 42vmin;
+    border-radius: 20px;
     margin-top: 25vmin;
     font-size: 56px;
     font-weight: bolder;
     color: white;
+    border-top: solid 2px #131314;;
+    border-bottom: solid 2px #131314;
+    border-left: solid 2px #131314;
+    border-right: solid 2px #131314;
+    box-shadow: 0px 0px 5px 0px #131314;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+#searchicon {
+    color: #7d7d7d;;
+    margin-top: 1.5vmin;
+    margin-left: 1.5vmin;
+    float: left;
+}
+#globeicon {
+    color: #7d7d7d;;
+    margin-top: -4.9vmin;
+    margin-right: 1.5vmin;
+    float: right;
+}
+#searchiconlogo {
+    color: white;
+    font-size: 6svmin;
+}
+#placeiconlogo {
+    color: white;
+    font-size: 5svmin;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  gap: 2vmin;
+}
+#myicon {
+    position: absolute;
+    margin-top: 2.5vmin;
+    margin-left: 2.5vmin;
+}
+#personicon {
+    position: absolute;
+    margin-top: -.3vmin;
+}
+#siteicons {
+    position: absolute;
+    margin-top: 2.5vmin;
+    right: 6.5vmin;
+}
+#tokenicon {
+    position: absolute;
+    right: -3.5vmin;
+    bottom: -.1vmin;
+}
+.sitename {
+    margin-top: 2vmin;
+    color: #7d7d7d;
 }
