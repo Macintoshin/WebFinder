@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <title>MacInSearch</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="javascript.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="icon" href="assets/Happy_Mac.svg">
-    </header>
+        <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
+        <script src="search.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <center>
-            <div class="Logo">
-                <img src="assets/Happy_Mac.svg">
-                <span class="material-symbols-outlined" id="placeiconlogo">place_item</span>           
-                <span class="material-symbols-outlined" id="searchiconlogo">search</span>         
+        <div class="SearchContainer">
+            <div id="logo">
+                <img onclick="changeBackground()" id="mac" src="assets/Happy_Mac.svg">
+                <div id="name">
+                    Mac<br>In<br>Search
+                </div>
             </div>
-            <div class="sitename">MacInSearch</div>
-            <div class="Searchbox">
-                <input id="searchbar" autofocus="autofocus" type="text" onkeypress="handle(event)" class="textfield" placeholder="Type a search query or a URL">
-                <span class="material-symbols-outlined" id="searchicon">search</span>
-                <span class="material-symbols-outlined" id="globeicon">public</span>   
+            <div id="SearchBar" class="SearchBarClass">
+                <input id="Query" autofocus="autofocus" type="text" onkeypress="handle(event)" placeholder="Type a search query or a URL">
             </div>
-        </center>
-        <br>
-        <div class="buttons">
-            <button onclick="googleSearch();"  id="searchbutton">Search</button>
-            <button  id="sitebutton" onclick="website()">Github</button>
+            <div id="Buttons">
+                <button id="search" onclick="googleSearch()">Search</button>
+            </div>
         </div>
-        <footer>
-            <div id="links">
-                <a href="https://macintoshing.tk/" id="myicon">Made by Macintoshing<span  class="material-symbols-outlined" id="personicon">person</span></a>
-                <a href="https://github.com/material-components" id="siteicons">Site icons <span class="material-symbols-outlined" id="tokenicon">token</span></a>
-            </div>
-        </footer>
     </body>
 </html>
