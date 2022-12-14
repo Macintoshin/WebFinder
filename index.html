@@ -5,20 +5,36 @@
         <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
         <script src="search.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <meta name="theme-color" content="#ecd96f">
     </head>
+    <script>
+function handle(e){
+address=document.getElementById("Query").value;
+if(e.keyCode === 13){
+var text=document.getElementById("Query").value;
+    var cleanQuery = text.replace(" ","+",text);
+    var url='http://www.google.com/search?q='+cleanQuery;
+
+    window.location.href=url;
+}
+return false;
+}
+    </script>
     <body>
         <div class="SearchContainer">
             <div id="logo">
-                <img onclick="changeBackground()" id="mac" src="assets/Happy_Mac.svg">
+                <img onclick="changeBackground()" id="mac" src="assets/9d106a7c24d36c42d872fc80b2ebff84_ySgtJPk8KU.icns.png">
                 <div id="name">
-                    Mac<br>In<br>Search
+                    WebFinder
                 </div>
             </div>
             <div id="SearchBar" class="SearchBarClass">
                 <input id="Query" autofocus="autofocus" type="text" onkeypress="handle(event)" placeholder="Type a search query or a URL">
             </div>
+            <div id="credit">Powered By <a style="color: grey; text-decoration: none;" href="https://google.com">Google Search</a>.</div>
             <div id="Buttons">
-                <button id="search" onclick="googleSearch()">Search</button>
+                <button id="search" onclick="googleSearch()">Find</button>
+                <button id="search" onclick="classicSearch()">Classic</button>
             </div>
         </div>
     </body>

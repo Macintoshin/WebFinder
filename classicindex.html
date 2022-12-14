@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MacInSearch</title>
+        <link id="theme" rel="stylesheet" type="text/css" href="styleclassic.css" />
+        <script src="search.js"></script>
+    </head>
+    <script>
+function handle(e){
+address=document.getElementById("Query").value;
+if(e.keyCode === 13){
+var text=document.getElementById("Query").value;
+    var cleanQuery = text.replace(" ","+",text);
+    var url='https://wiby.me/?q='+cleanQuery;
+
+    window.location.href=url;
+}
+return false;
+}
+    </script>
+    <body>
+        <div class="SearchContainer">
+            <div id="logo">
+                <img onclick="changeBackground()" id="mac" src="assets/finder.png">
+                <div id="name">
+                    WebFinder Classic
+                </div>
+            </div>
+            <div id="SearchBar" class="SearchBarClass">
+                <input id="Query" autofocus="autofocus" type="text" onkeypress="handle(event)" placeholder="Type a search query to browse the World Wide Web!">
+            </div>
+            <div id="credit">Powered By <a style="color: grey; text-decoration: none;" href="https://wiby.me">wiby.</a></div>
+            <div id="Buttons">
+                <button id="search" onclick="wibySearch()">Find</button>
+                <button id="search" onclick="modernSearch()">modern</button>
+            </div>
+        </div>
+    </body>
+</html>

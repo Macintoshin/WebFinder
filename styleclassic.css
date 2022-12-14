@@ -8,8 +8,8 @@ html, body {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     background-color: #222428;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: all 600ms;
+    cursor: url(assets/arrow.png), auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 .dark-mode {
     background-color: rgb(230, 230, 230);
@@ -28,19 +28,17 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 7vmin; width: 75vmin;
-    border-radius: 100vmin;
     border: solid .2vmin #636498;
-    transition: all 300ms;
+    font-family: 'Times New Roman', Times, serif;
 }
 #SearchBar:hover {
     background-color: #2F3136;
     border: .2vmin solid #636498;
-    box-shadow: 0px 0px 10px 0px #000000;
+    cursor: url(assets/arrow.png), auto;
 }
 #SearchBar:has(> input:focus) {
     background-color: #3f3f68;
     border: .2vmin solid #636498;
-    box-shadow: 0px 0px 10px 0px #000000;
 }
 input {
     
@@ -50,6 +48,7 @@ input {
     font-size: 2.5vmin;
     outline: none;
     border: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 input:focus {
@@ -63,15 +62,15 @@ input:focus {
     border: .2vmin solid #636494;
     color: white;
     font-size: 2vmin;
-    border-radius: .7vmin;
     height: 5vmin; width: auto;
     padding-left: 2vmin;
     padding-right: 2vmin;
-    transition: all 300ms;
+    
 }
 #search:hover {
     background-color: #636494;
     border: solid .2vmin #3F3F65;
+    cursor: url(assets/arrow.png), auto;
 }
 img {
     height: 13vmin;
@@ -86,16 +85,12 @@ img {
     padding: 2vmin;
     background: #636498;
     background-size: cover;
-    border-radius: .7vmin;
-    transition: all 600ms ease;
 }
 #name {
     padding: .5vmin;
-    border-radius: 4px;
     color: white;
     font-size: 3.5svmin;
     background-color: #3f3f657f;
-    transition: all 600ms ease;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -105,9 +100,7 @@ img {
 }
 #mac {
     padding: .5vmin;
-    border-radius: 4px;
     background-color: #3f3f657f;
-    transition: all 600ms ease;
 }
 @media only screen and (max-width: 700px) and (max-height: 999px) {
     body {
@@ -132,8 +125,6 @@ img {
         padding: 2vmin;
         padding-right: 2vmin;
         background: #00000073;
-        border-radius: .7vmin;
-        transition: all 600ms ease;
         scale: 150%;
     }
  }
