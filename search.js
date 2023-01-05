@@ -1,8 +1,8 @@
-function googleSearch()
+function duckSearch()
 {
     var text=document.getElementById("Query").value;
     var cleanQuery = text.replace(" ","+",text);
-    var url='http://www.google.com/search?q='+cleanQuery;
+    var url='https://duckduckgo.com/?q='+cleanQuery;
 
     window.location.href=url;
 }
