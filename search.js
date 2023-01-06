@@ -1,8 +1,8 @@
-function duckSearch()
+function qSearch()
 {
     var text=document.getElementById("Query").value;
     var cleanQuery = text.replace(" ","+",text);
-    var url='https://duckduckgo.com/?q='+cleanQuery;
+    var url='https://www.qwant.com/?q'+cleanQuery;
 
     window.location.href=url;
 }

@@ -13,7 +13,7 @@ address=document.getElementById("Query").value;
 if(e.keyCode === 13){
 var text=document.getElementById("Query").value;
     var cleanQuery = text.replace(" ","+",text);
-    var url='https://duckduckgo.com/?q='+cleanQuery;
+    var url='https://www.qwant.com/?q='+cleanQuery;
 
     window.location.href=url;
 }
@@ -31,9 +31,9 @@ return false;
             <div id="SearchBar" class="SearchBarClass">
                 <input id="Query" autofocus="autofocus" type="text" onkeypress="handle(event)" placeholder="Type a search query or a URL">
             </div>
-            <div id="credit">Powered By <a style="color: grey; text-decoration: none;" href="https://duckduckgo.com">DuckDuckGo</a>.</div>
+            <div id="credit">Powered By <a style="color: grey; text-decoration: none;" href="https://Qwant.com">Qwant</a>.</div>
             <div id="Buttons">
-                <button id="search" onclick="duckSearch()">Find</button>
+                <button id="search" onclick="qSearch()">Find</button>
                 <button id="search" onclick="classicSearch()">Classic</button>
             </div>
         </div>
