@@ -1,4 +1,4 @@
-## WebFinder ![Mac](https://webfinder.ml/assets/9d106a7c24d36c42d872fc80b2ebff84_ySgtJPk8KU.icns.png){width=64 height=64}
+## WebFinder <img src="https://webfinder.ml/assets/9d106a7c24d36c42d872fc80b2ebff84_ySgtJPk8KU.icns.png" alt="mac" width="64"/>
 
 My way of bypassing my schools anti customization.
 
